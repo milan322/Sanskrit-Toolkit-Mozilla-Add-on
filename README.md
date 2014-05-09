@@ -48,7 +48,7 @@
    (v)IndicKeyboardLayout.png : Virtual keyboard for Indian languages like :                                                   "Assamese","Bengali","Gujarati","Devanagari","Hindi","Kannada","Malayalam","Punjabi",
      "Tamil","Telugu" etc.This option you can see in "userInput.png".
      
-     (vi)UserInput_SanskritMeaningSearch.png :In this window user can type sanskrit text and search 
+   (vi)UserInputMeanSearch.png :In this window user can type sanskrit text and search 
      its meaning. A devanagari virtual key layout is avilable to type sanskrit text.
               
               

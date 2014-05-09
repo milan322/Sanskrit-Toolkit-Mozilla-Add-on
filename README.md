@@ -1,4 +1,4 @@
-->This is a mozilla firefox Sanskrit Toolit add-on for windows and Linux systems.
+->This is a mozilla firefox Sanskrit Tooklit add-on for windows and Linux systems.
 
 ->This add-on is supported in firefox version 21.0 and latest versions.
 

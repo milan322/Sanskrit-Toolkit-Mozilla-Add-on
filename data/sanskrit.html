@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    
+        <title>Sanskrit Toolkit</title>
+    </head>
+    <body>
+        <h1><div style="text-align:center;color:green;font-size:45px;">Welcome</div></h1>
+        <h2>Select the options you want to perform by using <span style="color:red">Sanskrit Toolkit</span>.</h2>
+        
+<div style="align:left;">
+<form name="submit">
+<p><input type="radio" id="Searching" name="choice" value="Word Search" checked>Search Meaning of Sanskrit Text</p>
+<p><input type="radio" id="Translate" name="choice" value="Transliteration">Transliteration</p>
+<p><input type="radio" id="Syllabificate" name="choice" value="Syllabification">Syllabification of Sanskrit Text</p>
+<p><input type="radio" id="keylayout" name="choice" value="IndicKeyboardLayout">Indic Keyboard Layout</p>
+<p><input type="button" value="Submit" onclick="check(this.form)" style="height:30px; width:130px ;font: bold 15px Arial;color:blue" ></p> 
+
+</form>
+</div>
+<script language="javascript">
+function check(form)/*function to check userid & password*/
+{
+/*the following code checkes whether the entered userid and password are matching*/
+
+//alert("Word is:->"+jFirst);
+if(document.getElementById('Searching').checked)
+
+{
+//alert("Word Search option is selected");
+//window.open('WordSearch.html');/*opens the target page while Id & password matches*/
+window.open('sanskrit_word_meaning_search.html');
+}
+
+else if(document.getElementById('Translate').checked)
+{
+//alert("Translate option is selected");
+window.open('Transliteration.html');
+}
+else if(document.getElementById('Syllabificate').checked)
+{
+//alert("Translate option is selected");
+window.open('syllabification.html');
+}
+
+else if(document.getElementById('keylayout').checked)
+{
+//alert("Translate option is selected");
+window.open('IndicKeyData/IndicKeyBoard.html');
+}
+
+
+else
+{
+alert("not selected");
+}
+
+}
+
+</script>
+    </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="????., 06 ??????? 2014 07:30:16 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Analyze-Sanskrit-Text</title>
+  <script>
+ function chkind(){
+    var dropdown1 = document.getElementById('dropdown1');
+   var id=document.getElementById('stext');
+var id_display=document.getElementById('txt_display');
+   var val=id.value;
+    if(dropdown1.selectedIndex == 1){
+var str=val;
+var cnt=0;
+var arr=new Array();
+var ch=[];
+var vowel = "\u0905,\u0907,\u0909,\u090B,\u0906,\u0908,\u090A,\u0960,\u090F,\u0910,\u0913,\u0914";
+for(var i=0;i<str.length;i++)
+{
+    ch[i]=str.charAt(i);
+     if (vowel.contains(ch[i]))
+     {
+         cnt=cnt+1;
+          arr.push(ch[i]);
+     }
+    
+
+}
+
+if(cnt==1)
+{
+
+  id_display.value="Detected Vowel :"+arr +"\n"+"No of Vowels :"+cnt;
+}
+
+else
+{
+ id_display.value="Detected Vowels are:"+arr +"\n"+"No of Vowels :"+cnt;
+}  
+    } 
+
+else if(dropdown1.selectedIndex == 2) {
+      var str1=val;
+      var cnt=0;
+var arr1=new Array();
+var ch1=[];
+for(var i=0;i<str1.length;i++)
+{
+ch1[i] = str1.charCodeAt(i);
+    
+    if((ch1[i]>= 2325 && ch1[i] <= 2361) || (ch1[i] >= 2391 && ch1[i] <= 2399) || (ch1[i]>= 2425 && ch1[i] <= 2426))
+    {
+        var data=String.fromCharCode(ch1[i]);
+        arr1.push(data);
+    }
+
+ }
+     id_display.value="Detected Consonants are:"+arr1;
+    }
+
+    
+else if(dropdown1.selectedIndex == 3)
+{
+
+
+  var longVowel = "\u0906,\u0908,\u090A,\u0960,\u090F,\u0910,\u0913,\u0914";
+    
+var str2=val;
+var cnt2=0;
+var arr2=new Array();
+var ch2=[];
+
+for(var i=0;i<str2.length;i++)
+{
+    ch2[i]=str2.charAt(i);
+     if (longVowel.contains(ch2[i]))
+     {
+         cnt2=cnt2+1;
+          arr2.push(ch2[i]);
+     }
+    
+
+}
+
+if(cnt2==1)
+{
+
+  id_display.value="Detected Long-Vowel :"+arr2 +"\n"+"No of Long-Vowels :"+cnt2;
+}
+
+else
+{
+ id_display.value="Detected Long-Vowels are:"+arr2 +"\n"+"No of Long-Vowels :"+cnt2;
+}  
+
+}
+
+else if(dropdown1.selectedIndex == 4)
+{
+  
+var shortVowel = "\u0905,\u0907,\u0909,\u090B";
+var str3=val;
+var cnt3=0;
+var arr3=new Array();
+var ch3=[];
+
+for(var i=0;i<str3.length;i++)
+{
+    ch3[i]=str3.charAt(i);
+     if (shortVowel.contains(ch3[i]))
+     {
+         cnt3=cnt3+1;
+          arr3.push(ch3[i]);
+     }
+    
+
+}
+
+if(cnt3==1)
+{
+
+  id_display.value="Detected Short-Vowel :"+arr3 +"\n"+"No of Short-Vowels :"+cnt3;
+}
+
+else
+{
+ id_display.value="Detected Short-Vowels are:"+arr3 +"\n"+"No of Short-Vowels :"+cnt3;
+}  
+}
+
+else if(dropdown1.selectedIndex == 5)
+{
+var softconsonant = "\u0917, \u091C, \u0921, \u0926, \u092B, \u0918, \u091D, \u0922, \u0927, \u092C, \u0939";
+
+var str4=val;
+var cnt4=0;
+var arr4=new Array();
+var ch4=[];
+
+for(var i=0;i<str4.length;i++)
+{
+    ch4[i]=str4.charAt(i);
+     if (softconsonant.contains(ch4[i]))
+     {
+         cnt4=cnt4+1;
+          arr4.push(ch4[i]);
+     }
+    
+
+}
+
+if(cnt4==1)
+{
+
+  id_display.value="Detected Soft-consonant :"+arr4 +"\n"+"No of Soft -consonants :"+cnt4;
+}
+
+else
+{
+ id_display.value="Detected Soft-Consonants are:"+arr4 +"\n"+"No of Soft-consonants :"+cnt4;
+}  
+}
+
+else if(dropdown1.selectedIndex == 6)
+{
+  var hardconsonant = "\u0915,\u091A,\u091F,\u0924,\u0929,\u0916,\u091B,\u0920,\u0925,\u092A,\u0936,\u0937,\u0938";
+var str5=val;
+var cnt5=0;
+var arr5=new Array();
+var ch5=[];
+
+for(var i=0;i<str5.length;i++)
+{
+    ch5[i]=str5.charAt(i);
+     if (hardconsonant.contains(ch5[i]))
+     {
+         cnt5=cnt5+1;
+          arr5.push(ch5[i]);
+     }
+    
+
+}
+
+if(cnt5==1)
+{
+
+  id_display.value="Detected Hard-consonant :"+arr5 +"\n"+"No of Hard -consonants :"+cnt5;
+}
+
+else
+{
+ id_display.value="Detected Hard-Consonants are:"+arr5 +"\n"+"No of Hard-consonants :"+cnt5;
+}  
+}
+
+else if(dropdown1.selectedIndex ==7)
+{
+ var vowelsign = "\u093F,\u0941,\u0943,\u093E,\u0940,\u0942,\u0944,\u0947,\u0948,\u094B,\u094C";
+var str6=val;
+var cnt6=0;
+var arr6=new Array();
+var ch6=[];
+
+for(var i=0;i<str6.length;i++)
+{
+    ch6[i]=str6.charAt(i);
+     if (vowelsign.contains(ch6[i]))
+     {
+         cnt6=cnt6+1;
+          arr6.push(ch6[i]);
+     }
+    
+
+}
+
+if(cnt6==1)
+{
+
+  id_display.value="Detected Vowel-Sign:"+arr6 +"\n"+"No of  Vowel-signs :"+cnt6;
+}
+
+else
+{
+ id_display.value="Detected Vowel-Signs are:"+arr6 +"\n"+"No of Vowel-signs :"+cnt6;
+}  
+}
+    }
+
+</script>
+	
+	<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:left;
+		padding-left:20px;
+	}
+	.tftextinput2{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton2 {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton2:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton2::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+</style>
+  </head>
+
+  <body>
+  
+<br />
+<div id="tfheader">
+	<h2 style="text-align:center;">Analyze Sanskrit Text</h2>
+	</div>
+ <h1 style="color:#004080" >Selected text is  <input type="text" id="stext" /></h1>
+<h2 style="color:red" >Select options to check</h2>
+<select  onchange="chkind()" id="dropdown1">
+    <option value=0>choose...</option>
+    <option value=1>Devanagari-Vowel</option>
+    <option value=2>Devanagari-Consonant</option>
+	<option value=3>Devanagari-LongVowel</option>
+	<option value=4>Devanagari-ShortVowel</option>
+	<option value=5>Devanagari-SoftConsonant</option>
+	<option value=6>Devanagari-HardConsonant</option>
+                 <option value=7>Devanagari-Vowel-Signs</option>
+</select><br />
+ 
+<br/>
+
+<p style="color:blue;font-size:20px;">Result:</p>
+
+
+<textarea  rows="4" cols="50" type="txt" id="txt_display" size="40"  ></textarea>
+</body>
+</html>

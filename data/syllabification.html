@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Syllabification of Sanskrit Text</title>
+<script type='text/javascript'>
+function SyllabificateExampleJS() {
+   var i;
+var j;
+var  sentence = document.getElementById("tfq").value;
+var txtAreaValue=document.getElementById('txt');
+	
+ var signs = "\u0902,\u0903,\u093e,\u093f,\u0940,\u0941,\u0942,\u0943,\u0944,\u0946,\u0947,\u0948,\u094a,\u094b,\u094c,\u094d";
+
+        var limiters = ".\"\'`!;,?";
+
+        var virama = '\u094d';
+        var zwj = '\u200d';
+
+        //ArrayList<String> syllables = new ArrayList<String>();
+//var syllables=[];
+var syllables=new Array();
+        for ( i = 0; i < sentence.length; i++) {
+            if (sentence.substring(i, i + 1)==(" ")) {
+                continue;
+            }
+
+
+
+            if (i > 0 && sentence.substring(i - 1, i)==(" ")) {
+                syllables.push(sentence.substring(i, i + 1));
+                continue;
+            }
+			if (limiters.indexOf(sentence.substring(i, i + 1))!=-1) {
+	                syllables.add(sentence.substring(i, i + 1));
+	         // 	  System.out.println("in this");
+	            } 
+			
+			
+			
+                else {
+                try {
+                    if (syllables.get(syllables.size - 1).charAt(syllables.get(syllables.size - 1).length() - 1) == virama
+                            || syllables.get(syllables.size - 1).charAt(syllables.get(syllables.size - 1).length() - 1) == zwj) 
+                    {
+					
+                        syllables.set(syllables.size - 1,syllables.get(syllables.size - 1) + sentence.substring(i, i + 1));
+                    } else {
+					
+                        syllables.set(sentence.substring(i, i + 1));
+                    }
+                } catch (Except) {
+				//document.write("GGG");
+				//alert(Except);
+                    syllables.push(sentence.substring(i, i + 1));
+					
+					
+                }
+            }
+
+}
+
+   // document.write(syllables);
+txtAreaValue.value=syllables;
+}
+</script>
+
+<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:left;
+		padding-left:20px;
+	}
+	.tftextinput2{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton2 {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton2:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton2::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+</style>
+</head>
+  <body>
+<br />
+<div id="tfheader">
+	<h2 style="text-align:center;">Syllabification of Sanskrit Text</h2>
+	</div>
+
+ <input type="text" id="tfq" class="tftextinput2" size="21" onchange='SyllabificateExampleJS()' maxlength="100" value="enter text" onfocus="if(this.value  == 'enter text') { this.value = ''; } " onblur="if(this.value == '') { this.value = 'enter text'; } "><input type="submit" title="Go" value=">" class="tfbutton2">
+  
+<br/>
+<br>
+<p style="color:blue;font-size:20px;">Syllabification Results:</p>
+
+<textarea  rows="4" cols="60" type="txt" id="txt" size="40"  ></textarea>
+</body>
+</html>

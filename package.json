@@ -1,0 +1,9 @@
+{
+    "name": "sanskrit_toolkit_plugin", 
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+    "author": "Milan(email:milan322@rediffmail.com)", 
+    "version": "0.1", 
+    "fullName": "Sanskrit Toolkit Plugin", 
+    "id": "jid1-7cwkodh3d5B6Dw", 
+    "description": "This plugin helps in processing of sanskrit text. "
+}

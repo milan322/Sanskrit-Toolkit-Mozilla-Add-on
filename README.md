@@ -36,14 +36,56 @@
               *Search this Sanskrit Text(Without Html tag,Line no,Page no)
               *Analyze the Sanskrit Text
           
-       The "Search Text(Details)" option displays the meaning of the sanskrit text in a popup panel which contains               the meaning from the sanskrit dictionary with line and page numbers also html tag elements.While the other option        "Search this Sanskrit Text(Without Html tag,Line no,Page no)" will open the result of sanskrit text in popup panel         without line numbers,page numbers,html tags. 
+  The "Search Text(Details)" option displays the meaning of the sanskrit text in a popup panel 
+  which contains  the meaning from the sanskrit dictionary with line and page numbers also html 
+  tag elements.While the other option "Search this Sanskrit Text(Without Html tag,Line no,Page no)"
+  will open the result of sanskrit text in popup panel without line numbers,page numbers,html tags. 
        
-    (iv)extractdevchar.png :If any webpage contains sanskrit contents and if you want to extract all the sanskrit content                             so we just have to press right-click on the webpage and a context-menuitem will appear as                                "Find Devanagari Text" as we can see in this image.
+    (iv)extractdevchar.png :If any webpage contains sanskrit contents and if you want to extract all 
+    the sanskrit content so we just have to press right-click on the webpage and a context-menuitem 
+    will appear as "Find Devanagari Text" as we can see in this image.
     
-     (v)IndicKeyboardLayout.png : Virtual keyboard for Indian languages like :                                                   "Assamese","Bengali","Gujarati","Devanagari","Hindi","Kannada","Malayalam","Punjabi","Tamil","Telugu" etc.. 
-       This option you can see in "userInput.png".
+   (v)IndicKeyboardLayout.png : Virtual keyboard for Indian languages like :                                                   "Assamese","Bengali","Gujarati","Devanagari","Hindi","Kannada","Malayalam","Punjabi",
+     "Tamil","Telugu" etc.This option you can see in "userInput.png".
      
-     (vi)UserInput_SanskritMeaningSearch.png :In this window user can type sanskrit text and search its meaning.A                 devanagari virtual key layout is avilable to type sanskrit text.
+     (vi)UserInput_SanskritMeaningSearch.png :In this window user can type sanskrit text and search 
+     its meaning. A devanagari virtual key layout is avilable to type sanskrit text.
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
               
               
               

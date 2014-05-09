@@ -4,7 +4,7 @@
 
 -> "sanskrit_toolkit_plugin.xpi" is the add-on file.
 
-->When it is installed sucessfully a icon widget will be shown on your firefox browser.
+->When it is installed sucessfully an icon widget will be shown on your firefox browser.
 
 ->The main plugin class (main.js) of the add-on is present inside the "lib" directory.The other two files "languages.js" and "translate.js" are used for the google-translate to function.And the "Data" directory contains few "html", "javascript(.js)" files and few images for the add-on functionalities.
 

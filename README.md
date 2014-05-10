@@ -37,8 +37,8 @@
               *Analyze the Sanskrit Text
           
   The "Search Text(Details)" option displays the meaning of the sanskrit text in a popup panel 
-  which contains  the meaning from the sanskrit dictionary with line and page numbers also html 
-  tag elements.While the other option "Search this Sanskrit Text(Without Html tag,Line no,Page no)"
+  which contains  the meaning from the sanskrit dictionary online along with line numbers,page numbers and html 
+  tag elements of the searched text.While the other option "Search this Sanskrit Text(Without Html tag,Line no,Page no)"
   will open the result of sanskrit text in popup panel without line numbers,page numbers,html tags. 
        
     (iv)extractdevchar.png :If any webpage contains sanskrit contents and if you want to extract all 

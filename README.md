@@ -17,18 +17,22 @@
   (ii)Translation (using google translate api)
   (iii)Transliteration option which also works for roman characters.
   (iv)Sanskrit text syllabification
-  (v)Analysis of Sanskrit text(Detects vowels,consonant,long vowel,short vowels,hard consonants,soft consonants,vowel        signs etc.)
+  (v)Analysis of Sanskrit text(Detects vowels,consonant,long vowel,short vowels,hard consonants,
+  soft consonants,vowel signs etc.)
   (vi)Option for extracting Devanagari text from webpage.
   (vii)Virtual Keyboard layout for indian languages.
   
   
     ->Please check the test images in the "Toolkit-Images" folder to get started.
     
-     (i)toolkiticonwidget.png : when the add-on will be installed sucessfully then a image icon will be appeared on the        top right or bottom right corner of the mozilla browser(depending on the mozilla version you have)  like this image.
+     (i)toolkiticonwidget.png : when the add-on will be installed sucessfully then 
+     a image icon will be appeared on the top right or bottom right corner of the mozilla browser
+     (depending on the mozilla version you have)  like this image.
      
      (ii)userInput.png: Now if the icon is clicked it will open one html page on your browse like this image.
                        
-     (iii)contextmenuitems.png : Now if you go to any webpage which contains sanskrit documents and if you select any text      and press right click you can see some context menu options as :
+     (iii)contextmenuitems.png : Now if you go to any webpage which contains sanskrit documents and if 
+     you select any text and press right click you can see some context menu options as :
               *Translate_This_Text(using Google translate)
               *Search Text(Details)
               *Transliteration

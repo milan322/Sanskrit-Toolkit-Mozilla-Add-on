@@ -49,7 +49,7 @@
     the sanskrit content so we just have to press right-click on the webpage and a context-menuitem 
     will appear as "Find Devanagari Text" as we can see in this image.
     
-     (v)IndicKeyboardLayout.png : Virtual keyboard for Indian languages like :                                                 "Assamese","Bengali","Gujarati","Devanagari","Hindi","Kannada","Malayalam","Punjabi",
+(v)IndicKeyboardLayout.png : Virtual keyboard for Indian languages like :                                                 "Assamese","Bengali","Gujarati","Devanagari","Hindi","Kannada","Malayalam","Punjabi",
      "Tamil","Telugu" etc.This option you can see in "userInput.png".
      
    (vi)UserInputMeanSearch.png :In this window user can type sanskrit text and search 
